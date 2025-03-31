@@ -1,0 +1,45 @@
+<%- include('head.ejs') %>
+    <title>Editar</title>
+</head>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="https://imgs.search.brave.com/RxNZq_jRHRr8ob-IjUFlCQHtCwsK9Tv6TqBZEIlCsT4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2E1L01hc2NvdGFf/SXRhX0FwaXphY28u/anBn" class="img-fluid" alt="Toros Tec">    
+        </div>
+        <div class="col">
+            <div class="card" style="width: 30rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Editar datos del Cliente</h5>
+                    <!--Uso el mismo formato de index.ejs-->
+                    <form action="/" method="post">
+                        <div class="mb-3">
+                          <label for="nombre" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="nombre" name="nombre">
+                        </div>
+                        <div class="mb-3">
+                          <label for="apellido" class="form-label">Apellido</label>
+                          <input type="text" class="form-control" id="apellido" name="apellido">
+                        </div>
+                        <div class="mb-3">
+                            <label for="n_cliente" class="form-label">Numero de Cliente</label>
+                            <input type="text" class="form-control" id="numero_c" name="numero_c">
+                          </div>
+                        <div class="mb-3">
+                          <label for="fecha" class="form-label">Fecha de Captura</label>
+                          <input type="date" class="form-control" id="fecha" name="fecha">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Capturar</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <img src="https://imgs.search.brave.com/aX4OrPLFJs9fkE-_CyRp98KVs9WOcF5R0m1CKGeenJY/rs:fit:860:0:0:0/g:ce/aHR0cDovL3d3dy5p/dGNoZXR1bWFsLmVk/dS5teC90ZW1wbGF0/ZXMvcGxhbnRpbGxh/X2NsYXNlL2Fzc2V0/cy9maWxlcy9tYWlu/L2ltZy9wbGVjYV90/ZWNubS5qcGc" class="img-fluid" alt="Toros Tec">
+        </div>
+    </div>
+</div>
+<!-- Inclusion del script paara añadir menus deplegables, poppers y descripciones emergentes. -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
